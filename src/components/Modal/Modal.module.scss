@@ -1,0 +1,72 @@
+@import '../../variables';
+
+// Modal Component SCSS
+.modal {
+  background: $white;
+  position: fixed; /* Stay in place */
+  transform: translate(-50%, -50%);
+  left: 50%; 
+  top: -100%;
+  width: 100%; /* Full width */
+  max-width: 500px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid $secondary-color;
+ 
+
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%; 
+	}
+}
+
+.ModalBackdrop {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+  
+}
+
+.close {
+  top: -100%; 
+  transition:  top 0.5s;
+}
+
+.open {
+  top: 50%;
+  transition: top 0.5s;
+}
+
+.closeIcon {
+  z-index: 999;
+  float: right;
+  margin: 3px 3px 0 0;
+  font-size: 30px;
+}
+
+.title {
+  margin: 3rem 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+// ModalContent Component SCSS
+
+.content {
+  display: block;
+  padding: 0 3rem;
+}
+
+// ModalActions Component SCSS
+
+.actions {
+  padding: 0 3rem 2rem;
+  margin-top: 1rem;
+}

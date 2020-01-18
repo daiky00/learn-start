@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 0 2.5rem;
+  transform: translateY(-50%);
+  @media screen and (max-width: $break-medium) {
+    top: 30%;
+    text-align: center; 
+    transform: translateY(-30%);
+	}
+}
+
+.heroWrapper {
+  height: 95vh;
+  background: $black;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.heroTitle {
+  color: $white;
+  font-size: 3.3rem;
+  margin-bottom: 1.5rem;
+  @media screen and (max-width: $break-medium) {
+    font-size: 2.8rem;
+  }
+  
+
+}
+
+.heroSubtitle {
+  color: $white;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+  @media screen and (max-width: $break-medium) {
+    font-size: 1rem;
+  }
+}
