@@ -8,7 +8,7 @@ function Stories() {
   return (
     <React.Fragment>
       <Hero>
-        <HeroTitle center>Stories</HeroTitle>
+        <HeroTitle center="true">Stories</HeroTitle>
       </Hero>
     </React.Fragment>
   );

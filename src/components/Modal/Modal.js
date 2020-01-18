@@ -17,7 +17,7 @@ const Modal = (props) => {
         </div>
         {props.children}
       </div>
-      <div className={props.open && styles.ModalBackdrop}></div>
+      <div className={`${props.open && styles.ModalBackdrop}`}></div>
     </React.Fragment>
   )
 }
